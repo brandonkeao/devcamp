@@ -45,3 +45,17 @@
     }
   }
 }
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: middle;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-profile-icon {
+  float: right;
+}

@@ -9,18 +9,42 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg justify-content-between">
-      <a class="navbar-brand" href="#">
-        <img src="<%= image_url('navbar-icon') %>" width="37" height="30" class="d-inline-block align-top" alt="">
-      </a>
-      <ul class="navbar-nav align-self-center">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Home</a>
-        </li>
-      </ul>
-      <ul class="navbar-nav align-self-center">
+    <nav class="navbar">
+      <div class="container-fluid">
 
-      </ul>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar">=</span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="<%= image_url('navbar-icon') %>" width="37" height="30" class="d-inline-block align-top" alt="">
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Latest Activity</a></li>
+            <li><a href="#">Pings</a></li>
+            <li><a href="#">Hey!</a></li>
+            <li><a href="#">Campfires</a></li>
+            <li><a href="#">Reports</a></li>
+            <li><a href="#">Find</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Settings</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Logout</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div>
     </nav>
     <%= yield %>
   </body>
